@@ -2,7 +2,7 @@ import kotlin.random.Random
 
 class Games {
     private var currentgame: (() -> Unit)? = null
-    private var random: Int = 0
+    private var random by Delegates.notNull<Int>()
     fun play(){
         print("В какую игру хотите поиграть?\n1. Угадай число\n2. Бомбы\n3. Монетка\nВведите цифру: ")
         when(readLine()!!.toInt()){
