@@ -55,7 +55,7 @@ class Games {
         askUser()
     }
     private fun askUser(){
-        println("Что дальше?")
+        println("\nЧто дальше?")
         print("1. Играть заново\n2. Вернуться к списку игр\nВведите цифру: ")
         when(readLine()!!.toInt()){
             1 -> currentgame!!.invoke()
