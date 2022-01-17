@@ -47,7 +47,7 @@ class Games {
                     askUser()
                 }
                 else -> {
-                    println("Верно. Идем дальше.")
+                    println("Верно!")
                 }
             }
         }
